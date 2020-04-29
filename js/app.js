@@ -1,6 +1,6 @@
 'use strict';
 
-alert('Greetings Friends');
+alert('Greetings Friends, welcome to Edgar\'s new web page');
 
 //first question to know visitors name
 var userName = prompt('What is yor name?');
@@ -9,7 +9,7 @@ console.log('Prompt for username. User answered: ' + userName );
 //second question if username wants try a game
 var canYouGuess = prompt('Hola ' + userName + ' do you wanna guess where I am from?');
 if(canYouGuess.toLowerCase() === 'yes'){
-  alert('great, I will help you with ease questions.');
+  alert('great, I will help you with easie questions.');
 } else if(canYouGuess.toLowerCase() === 'no'){
   alert('Too bad, you have to do it');}
 prompt('Please answer with a yes or a no');
@@ -36,7 +36,7 @@ if(tacos.toLowerCase() === 'yes'){
   alert('That is unacceptable');
 }
 
-alert('Well ' + userName + ' I think is pretty clear now, I am from Italy');
+alert('Well ' + userName + ' I think is pretty clear now, I am from Italy hehe');
 alert('Adios My friend');
 
 
