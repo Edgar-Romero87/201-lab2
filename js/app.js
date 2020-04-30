@@ -50,8 +50,31 @@ function food(){
   }
 }
 
+//sixth question about Mexico
+function states(){
+  var correctNumber = 32;
+  for(var i = 0; i < 4; i ++){
+    var guessingNumber = parseInt(prompt('Now, an small game, how many states are in Mexico? you have 5 apportunities'));
+    if(guessingNumber === correctNumber){
+      alert('You are correct');
+      break;
+      //correctAnswer ++;
+    } else if(guessingNumber < correctNumber){
+      alert('Sorry,too low, try again');
+    } else if(guessingNumber > correctNumber){
+      alert('Sorry, to high');
+    }
+    if( i === 3){
+      alert('unfurtunely that was you final chance, Mexico has 32 states');
+    }
+  }
+}
+user();
+from();
+tequila();
+guac();
+food();
 alert('Well ' + userName + ' I think is pretty clear now, I am from Italy hehe');
+states();
 alert('Adios My friend');
-
-
-console.log(userName + ' guess where from ' + canYouGuess);
+//console.log(userName + ' guess where from ' + canYouGuess);
