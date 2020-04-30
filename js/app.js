@@ -3,7 +3,7 @@
 alert('Greetings Friends, welcome to Edgar\'s new web page');
 
 //first question to know visitors name
-var userName = prompt('What is yor name?');
+var userName = prompt('What is your name?');
 console.log('Prompt for username. User answered: ' + userName );
 
 //second question if username wants try a game
@@ -37,7 +37,23 @@ if(tacos.toLowerCase() === 'yes'){
 }
 
 alert('Well ' + userName + ' I think is pretty clear now, I am from Italy hehe');
-alert('Adios My friend');
+alert('No the truth is that I\' from Mexico');
 
 
-console.log(userName + ' guess where from ' + canYouGuess);
+var correctNumber = 32;
+for(var i = 0; i < 4;i = i ++){
+  var guessingNumber = prompt('Now, an small game, how many states are in Mexico? you have 5 apportunities');
+  if(guessingNumber === correctNumber){
+    alert('You are correct');
+    break;
+    //correctAnswer ++;
+  } else if(guessingNumber < correctNumber){
+    alert('Sorry,too low, try again');
+  } else if(guessingNumber > correctNumber){
+    alert('Sorry, to high');
+  }
+  if( i === 3){
+    alert('unfurtunely that was you final chance, Mexico has 32 states');
+  }
+}
+
