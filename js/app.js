@@ -6,7 +6,7 @@ alert('Greetings Friends, welcome to Edgar\'s new web page');
 
 //first question to know visitors name
 function user(){
-  userName = prompt('What is yor name?');
+  userName = prompt('What is your name?');
   console.log('Prompt for username. User answered: ' + userName );
 }
 
@@ -54,7 +54,7 @@ function food(){
 function states(){
   var correctNumber = 32;
   for(var i = 0; i < 4; i ++){
-    var guessingNumber = parseInt(prompt('Now, an small game, how many states are in Mexico? you have 5 apportunities'));
+    var guessingNumber = parseInt(prompt('Now, an small game, how many states are in Mexico? you have 5 opportunities'));
     if(guessingNumber === correctNumber){
       alert('You are correct');
       break;
@@ -69,12 +69,37 @@ function states(){
     }
   }
 }
+
+
+//sevent question
+function notFromMexico(){
+  var myFavCities= ['Seattle','Las vegas','New York','Mexico'];
+  var isWrong = true;
+  for(var j =0; j < 4; j ++){
+    var city = prompt('Now, the last one I promise, name a city that you think is my one of my favorite ones, you have 4 opportunities');
+    for(var i =0;i < myFavCities.length; i ++){
+      if (city.toLowerCase() === myFavCities[i]){
+        alert('Good Job');
+        isWrong = false;
+        break;
+      }
+    } if (isWrong === true){
+      alert('Try again');
+    } else {
+      break;
+    }
+  }
+}
+
+
+
 user();
 from();
 tequila();
 guac();
 food();
-alert('Well ' + userName + ' I think is pretty clear now, I am from Italy hehe');
 states();
+notFromMexico();
+alert('Well ' + userName + ' I think is pretty clear now, I am from Italy hehe');
 alert('Adios My friend');
 //console.log(userName + ' guess where from ' + canYouGuess);
